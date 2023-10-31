@@ -56,7 +56,7 @@ function resumoDaAta() {
   var ultimaLinha = aba.getLastRow();
   
   // Definir as colunas de interesse
-  var colunas = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X'];
+  var colunas = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
   
   // Armazenar os valores
   var valores = {};
@@ -73,7 +73,7 @@ function resumoDaAta() {
 
   
   // Montar a mensagem de resumo
-  var mensagem = "*Resumo da Ata do Grupo Campo Santo de NA*\n";
+  var mensagem = "*Resumo da Ata do Grupo Periperi de NA*\n";
   
   // Linhas das mensagens necessárias
   mensagem += "*Formato da Reunião*: " + valores['C'] + "\n";
@@ -118,23 +118,23 @@ function resumoDaAta() {
   mensagem += "*Nome(s) da(s) Conquista(s)*: " + valores['N'] + "\n";
   }
 
-  if (valores['U'] !== "") {
-  mensagem += "*Título da Temática*: " + valores['U'] + "\n";
-  }
   if (valores['V'] !== "") {
-  mensagem += "*Partilhador da Temática*: " + valores['V'] + "\n";
+  mensagem += "*Título da Temática*: " + valores['V'] + "\n";
+  }
+  if (valores['W'] !== "") {
+  mensagem += "*Partilhador da Temática*: " + valores['W'] + "\n";
   }
 
   if (valores['T'] !== "") {
   mensagem += "*Eleição de Encargo*: " + valores['T'] + "\n";
   }
 
-  if (valores['X'] !== "") {
-  mensagem += "*Observações*: " + valores['X'] + "\n";
+  if (valores['Y'] !== "") {
+  mensagem += "*Observações*: " + valores['Y'] + "\n";
   }
 
-  if (valores['W'] !== "") {
-  mensagem += "*Informações Adicionais*: " + valores['W'];
+  if (valores['U'] !== "") {
+  mensagem += "*Informações Adicionais*: " + valores['U'];
   }
 
   // Exibir log da mensagem montada
