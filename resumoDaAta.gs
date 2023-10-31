@@ -134,7 +134,11 @@ function resumoDaAta() {
   }
 
   if (valores['U'] !== "") {
-  mensagem += "*Informações Adicionais*: " + valores['U'];
+  mensagem += "*Informações Adicionais*: " + valores['U'] + "\n";
+  }
+
+  if (valores['X'] !== "") {
+  mensagem += "*Ata Feita Por*: " + valores['X'];
   }
 
   // Exibir log da mensagem montada
